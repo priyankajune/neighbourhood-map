@@ -1,0 +1,118 @@
+body{
+  overflow: hidden;
+}
+#map {
+  float: right;
+  width: 80%;
+  height: 100vh;
+  background-color: grey;
+}
+#searchContainer{
+  width: 20%;
+}
+
+#err {
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  align-items: center;
+  position: absolute;
+  z-index: 500;
+  right: 40%;
+  display: none;
+}
+.search{
+ 
+  border: 2px solid black;
+  width: 100%;
+  height: 30px;
+}
+.searchButton{
+  display: none;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+.searchList {
+  height: 100vh;
+  overflow: auto !important;
+  margin-bottom: 30px;
+ 
+}
+li {
+  cursor: pointer;
+  background-color: black;
+  color: black;
+  list-style: none;
+  width: 100%;
+  height: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: white;
+  
+}
+#venueDetails,#venueInfo {
+  text-align: center;
+  font-weight: bold;
+}
+li:hover {
+  background-color: grey;
+}
+/* Achieving Responsiveness */
+@media only screen and (max-width: 700px) {
+  
+  #searchContainer {
+    width: 50%;
+    z-index: 1;
+  }
+  .search {
+    width: 98%;
+  }
+
+.searchList {
+  height: 90vh;
+}
+  
+  #map {
+    z-index: 2;
+    width: 100%;
+    position: absolute !important;
+  }
+  .searchButton {
+    top: 0;
+    background-color: white;
+    z-index: 3;
+    position: absolute;
+    display: block;
+  }
+}
+@media screen 
+  and (min-width: 700px) 
+  and (max-width: 850px) {
+#searchContainer {
+  width: 50%;
+  z-index: 1;
+}
+.search {
+  width: 99%;
+}
+.searchList {
+  height: 90vh;
+}
+#map {
+  z-index: 2;
+  width: 100%;
+  position: absolute !important;
+}
+.searchButton {
+  top: 0;
+  background-color: white;
+  z-index: 3;
+  position: absolute;
+  display: block;
+}
+}
